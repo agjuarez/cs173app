@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>School Officials Portal</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -75,15 +75,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    University of the Philippines - <br>
+                    School Officials Portal
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <!-- add links -->
+                    <a href="{{ url('/login') }}"> Login</a>
+                    <a href="{{ url('/register') }}"> Register</a>
+
                 </div>
             </div>
         </div>
