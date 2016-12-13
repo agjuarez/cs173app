@@ -23,10 +23,10 @@
 
                       @foreach($announcements as $key => $announcement)
                         <div class="row" >
-                            <div class="col-md-9">
+                            <div class="col-md-8">
                               <h4>{{$announcement -> title}} </h4>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                               <a href="{{route('announcements.show',['id' => $announcement->id])}}" role = "button" class ="btn btn-primary">View Announcement</a>
                             </div>
                       </div>

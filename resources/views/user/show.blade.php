@@ -10,10 +10,10 @@
                     <div class="col-md-8">
                     <h3>User Profile for <strong>{{$user -> username}}</strong> </h3>
                   </div>
-                  <!-- <div class="col-md-4">
-                    <a href="{{route('user.edit',['id' => $user->id])}}" role ="button" class =" btn btn-warning">Edit Profile</a></div>
+                  <div class="col-md-4">
+                    <a href="{{route('user.edit',['id' => $user->id])}}" role ="button" class =" btn btn-warning" style = "margin-top: 20px; float:right;">Edit Profile</a></div>
 
-                  </div> -->
+                  </div>
 
                   </div>
 

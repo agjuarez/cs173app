@@ -32,7 +32,8 @@ class AnnouncementController extends Controller
      */
     public function create()
     {
-        return view('announcements.create');
+        
+        return view('announcements.create') ;
     }
 
     /**
@@ -42,6 +43,7 @@ class AnnouncementController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
         $this-> validate($request,[
           'title' => 'required',

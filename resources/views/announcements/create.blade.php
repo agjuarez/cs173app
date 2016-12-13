@@ -11,8 +11,8 @@
                     <form class="form" role="form" method="POST" action="{{ url('/announcements') }}">
                         {{ csrf_field() }}
 
-
                         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+
                             <label for="title" class=" control-label">title</label>
 
                             <div class="">

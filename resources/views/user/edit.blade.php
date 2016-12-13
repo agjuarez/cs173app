@@ -101,9 +101,10 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-warning">
                                     Edit
                                 </button>
+                                <a href="{{ route('user.show',['id' => $user->id]) }}" role = "button" class ="btn btn-primary"> Back</a>
                             </div>
                         </div>
                     </form>
