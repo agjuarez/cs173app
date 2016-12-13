@@ -62,10 +62,19 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                <li>   <a href="{{ url('/announcements') }}">
+                                      View Announcements
+                                      </a>
+                                </li>
                                     <li>   <a href="{{ url('/reports') }}">
                                           View Reports
                                           </a>
                                     </li>
+                                    <li>   <a href="{{ url('/user/show/') }}">
+                                          View Profile
+                                          </a>
+                                    </li>
+
                                     <li>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Foundation\Auth\RegistersUsers;
+
 
 
 class UserController extends Controller
@@ -79,7 +82,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+      $id = Auth::id();
+      $user = User :: find($id);
+      return view('/user/edit') -> with ('user', $user);
     }
 
     /**
@@ -89,9 +94,24 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+      $this-> validate($request,[
+        'title' => 'required',
+        'content' => 'required',
+
+      ]);
+      $id = Auth::id();
+      $user = User :: find($id);
+      $user->lastname = $request->input('lastname');
+      $user->firstname = $request->input('firstname');
+      $user->sex= $request->input('sex');
+      $user->birthday= $request->input('birthday');
+      $user->contactnumber= $request->input('contactnumber');
+      $user->address= $request->input('address');
+      
+      $user->save();
+      return view('user/show')-> with ('user',$user);
     }
 
     /**

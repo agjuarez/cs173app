@@ -9,10 +9,10 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                   <div class="row" >
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                       <strong><h2>Announcements</h2></strong>
                     </div>
-                    <div class=" col-md-3">
+                    <div class=" col-md-4">
                       <a href="{{url('announcements/create')}}"  role = "button" class ="btn btn-success" style = "margin-top: 20px;">Add Announcement</a>
                     </div>
                   </div>
